@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://addons/grass_painter/grass.shader" type="Shader" id=1]
+
+[sub_resource type="OpenSimplexNoise" id=1]
+
+[sub_resource type="NoiseTexture" id=2]
+seamless = true
+noise = SubResource( 1 )
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/color_top_min = Color( 0.388235, 0.403922, 0.207843, 1 )
+shader_param/color_top_max = Color( 0.615686, 0.639216, 0.333333, 1 )
+shader_param/color_bottom_min = Color( 0.278431, 0.290196, 0.145098, 1 )
+shader_param/color_bottom_max = Color( 0.486275, 0.501961, 0.266667, 1 )
+shader_param/min_h = 1.0
+shader_param/max_h = 3.0
+shader_param/deg_sway_pitch = 80.0
+shader_param/deg_sway_yaw = 45.0
+shader_param/wind_scale = 0.04
+shader_param/wind_speed = 1.0
+shader_param/wind_direction = Vector3( -1, 0, 0.5 )
+shader_param/shadow_noise = SubResource( 2 )

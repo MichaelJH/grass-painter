@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/grass_painter/scripts/GrassMap.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+_base_x = 0
+_base_z = 0
+_ext_x = 0
+_ext_z = 0
+_dist = 0.25
+map = PoolIntArray(  )
+baked_mesh_init_dims = [  ]
+curr_mesh_index = 0
+noise_seed = 3154986942
